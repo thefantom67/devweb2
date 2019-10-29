@@ -19,6 +19,7 @@ import { PanierComponent } from './panier/panier.component';
 import { DetailComponent } from './detail/detail.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { RegisterComponent } from './register/register.component';
+import { PanierState } from '../../shared/stats/panier-state';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,10 @@ import { RegisterComponent } from './register/register.component';
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxsModule.forRoot([
+      PanierState
+    ]),
     
   ],
   providers: [SwipeService],

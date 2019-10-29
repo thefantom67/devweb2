@@ -1,7 +1,7 @@
-import {NgxsModule,Action,Selector,State, StateContext} from '@ngxs/store';
-import {PanierStateModel} from './panier-state-model';
-import {AddHotel} from '../actions/article-action';
-import {DelHotel} from '../actions/article-delaction';
+import { NgxsModule,Action,Selector,State, StateContext } from '@ngxs/store';
+import { PanierStateModel } from './panier-state-model';
+import { AddHotel } from '../actions/article-action';
+import { DelHotel } from '../actions/article-delaction';
 
 @State<PanierStateModel>({
     name: 'panier',
@@ -25,11 +25,12 @@ export class PanierState {
         });
     }
 
- @Action(DelHotel)
-    del ({getState, patchState }: StateContext<PanierStateModel>, { payload }: AddHotel) {
+    @Action(DelHotel)
+    del ({getState, patchState }: StateContext<PanierStateModel>, { payload }: DelHotel) {
         const state = getState();
+        
         patchState({
-            panier: [...state.panier, payload]
+            panier: [...(state.panier.slice(0,-1))]
         });
     }   
 }

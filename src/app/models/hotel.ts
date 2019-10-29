@@ -1,5 +1,5 @@
-export class Hotel {
-    nom : string = '';
+export interface Hotel {
+    nom : string;
     prix : string;
     img : string;
 }
