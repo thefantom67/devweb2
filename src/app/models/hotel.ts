@@ -1,4 +1,4 @@
-export interface Hotel {
+export class Hotel {
     nom : string;
     prix : string;
     img : string;

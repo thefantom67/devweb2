@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Store } from '@ngxs/store';
 import { Observable } from 'rxjs';
 import { Hotel } from '../models/hotel';
+import { SwipeService } from '../services/swipe.service';
 import {PanierState} from '../../../shared/stats/panier-state';
 import { DelHotel } from '../../../shared/actions/article-delaction';
 
@@ -12,15 +13,15 @@ import { DelHotel } from '../../../shared/actions/article-delaction';
 })
 export class PanierComponent implements OnInit {
 
-  panier: Observable<Hotel>; 
+  Hotels: Observable<Hotel[]>; 
   
-  constructor(private store: Store) {
-    this.panier = this.store.select(state => state.panier.panier);
+  constructor(private store: Store, private SwipeService : SwipeService,) {
+    this.Hotels = this.store.select(state => state.panier.panier);
    }
-  onDelClick () {
-    this.DelHotel();
+  onDelClick (hotel : Hotel) {
+    this.DelHotel(hotel);
   }
-  DelHotel() { this.store.dispatch(new DelHotel()); }
+  DelHotel(hotel : Hotel) { this.store.dispatch(new DelHotel(hotel)); }
   
   ngOnInit() {
   }

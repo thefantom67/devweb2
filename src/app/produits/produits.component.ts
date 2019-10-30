@@ -12,23 +12,21 @@ import { AddHotel } from 'shared/actions/article-action';
 })
 export class ProduitsComponent implements OnInit {
 
-  nom : string;
-  prix: string;
-  img: string;
-
-  constructor(private SwipeService : SwipeService, private store: Store) {}
   Hotels : Observable<Hotel[]>
-  panier: Observable<Hotel>
 
-  onClick () {
-    this.addHotel(this.nom, this.prix, this.img);
+  constructor(private SwipeService : SwipeService, private store: Store) {
+    this.Hotels = this.store.select(state => state.panier.panier);
   }
 
-  addHotel(nom, prix, img) { this.store.dispatch(new AddHotel({nom,prix,img})); }
+  onClick (hotel: Hotel) {
+    this.addHotel(hotel);
+  }
+
+  addHotel(hotel: Hotel) {
+    this.store.dispatch(new AddHotel(hotel)); }
 
   ngOnInit() {
     this.Hotels = this.SwipeService.getHotels ();
-    this.panier = this.store.select(state => state.panier.panier);
   }
 
 }
