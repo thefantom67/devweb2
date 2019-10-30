@@ -7,7 +7,6 @@ import { FormGroup } from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'devweb2';
 
   formValidated: boolean = false;
   data: FormGroup;

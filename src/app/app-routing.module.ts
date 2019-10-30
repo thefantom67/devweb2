@@ -1,19 +1,18 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ProduitsComponent } from './produits/produits.component';
-import { PanierComponent } from './panier/panier.component';
-import { DetailComponent } from './detail/detail.component';
+import { PanierComponent } from './cart/panier/panier.component';
+import { DetailComponent } from './info/detail/detail.component';
 import { AccueilComponent } from './accueil/accueil.component';
-import { RegisterComponent } from './register/register.component';
 
 
 const routes: Routes = [
   { path: '', component: AccueilComponent },
-  { path: 'client', component: RegisterComponent },
-  { path: 'catalogue', component: ProduitsComponent, children: [{
-    path: 'detail', component: DetailComponent
-  }] },
-  { path: 'panier', component: PanierComponent }
+  { path: 'detail', component: DetailComponent},
+  { path: 'panier', component: PanierComponent },
+  { path: 'customer-list', loadChildren: () => import('./customers/customers.module').then(m => m.CustomersModule) },
+  { path: 'catalogue-list', loadChildren: () => import('./catalogue/catalogue.module').then(m => m.CatalogueModule) },
+  { path: 'info-list', loadChildren: () => import('./info/info.module').then(m => m.InfoModule) },
+  { path: 'cart-list', loadChildren: () => import('./cart/cart.module').then(m => m.CartModule) }
 ];
 
 @NgModule({

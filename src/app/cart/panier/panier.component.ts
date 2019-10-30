@@ -1,10 +1,10 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Store } from '@ngxs/store';
 import { Observable } from 'rxjs';
-import { Hotel } from '../models/hotel';
-import { SwipeService } from '../services/swipe.service';
-import {PanierState} from '../../../shared/stats/panier-state';
-import { DelHotel } from '../../../shared/actions/article-delaction';
+import { Hotel } from '../../models/hotel';
+import { SwipeService } from '../../services/swipe.service';
+import {PanierState} from '../../../../shared/stats/panier-state';
+import { DelHotel } from '../../../../shared/actions/article-delaction';
 
 @Component({
   selector: 'app-panier',
