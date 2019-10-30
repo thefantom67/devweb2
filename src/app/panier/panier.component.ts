@@ -14,8 +14,9 @@ export class PanierComponent implements OnInit {
 
   panier: Observable<Hotel>; 
   
-  constructor(private store: Store) {this.panier = this.store.select(state => state.panier.panier);}
-
+  constructor(private store: Store) {
+    this.panier = this.store.select(state => state.panier.panier);
+   }
   onDelClick () {
     this.DelHotel();
   }
