@@ -1,13 +1,12 @@
 # Devweb2
 
-Travail effectué: 65-70%
+Travail effectué: 95%
 Temps de réalisation: +10h
 
 Difficultés:
-- Récupération des données 
-- Affichage de la page de récapitulatif
-- Validation des données
-- Problème d'affichage dû à Materialize
+- Ajouter Articles
+- Afficher Articles panier
+- Supprimer Articles
 
 ## Development server
 
