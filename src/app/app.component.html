@@ -1,5 +1,3 @@
 <app-tetiere></app-tetiere>
-<app-produits></app-produits>
-<app-formulaire *ngIf="!formValidated" (formValidated)="onFormValidated($event)"></app-formulaire>
-<app-recap *ngIf="formValidated" [data]="data"></app-recap>
+<router-outlet></router-outlet>
 <app-footer></app-footer>

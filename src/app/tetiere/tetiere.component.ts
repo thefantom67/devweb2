@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Store } from '@ngxs/store';
+import { Observable  } from 'rxjs';
+import { Hotel } from '../models/hotel';
 
 @Component({
   selector: 'app-tetiere',
@@ -7,7 +10,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TetiereComponent implements OnInit {
 
-  constructor() { }
+  nbHotel : number;
+
+  constructor(private store: Store) {
+    this.store.select(state => state.panier.panier).subscribe (u => this.nbHotel = u.length);
+   }
 
   ngOnInit() {
   }

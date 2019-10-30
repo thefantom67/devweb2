@@ -1,5 +1,5 @@
 export class Hotel {
-    nom : string = '';
+    nom : string;
     prix : string;
     img : string;
 }
