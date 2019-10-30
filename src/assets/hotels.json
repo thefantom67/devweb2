@@ -1,0 +1,10 @@
+[
+    {"nom":"Hotel Strasbourg","prix":"123€","img":"https://image.noelshack.com/fichiers/2019/43/6/1572123835-1.jpeg"},
+    {"nom":"Villa Paris","prix":"150€","img":"https://image.noelshack.com/fichiers/2019/43/6/1572124332-6.jpeg"},
+    {"nom":"Hotel Bordeaux","prix":"90€","img":"https://image.noelshack.com/fichiers/2019/43/6/1572123834-2.jpeg"},
+    {"nom":"Hotel Bresil","prix":"250€","img":"https://image.noelshack.com/fichiers/2019/43/6/1572123834-3.jpeg"},
+    {"nom":"Logement Budapest","prix":"70€","img":"https://image.noelshack.com/fichiers/2019/43/6/1572123835-5.jpeg"},
+    {"nom":"Chateau Haut-Koenigsbourg","prix":"5000€","img":"https://image.noelshack.com/fichiers/2019/43/6/1572124332-8.jpeg"},
+    {"nom":"Villa Madrid","prix":"1500€","img":"https://image.noelshack.com/fichiers/2019/43/6/1572123835-4.jpeg"},
+    {"nom":"Logement Neuhof","prix":"10€","img":"https://image.noelshack.com/fichiers/2019/43/6/1572124332-7.jpeg"}
+]
