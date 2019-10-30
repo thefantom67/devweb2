@@ -1,18 +1,15 @@
-import { Component } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
+  
+  constructor() { }
 
-  formValidated: boolean = false;
-  data: FormGroup;
+  ngOnInit() {
+  }
 
-  onFormValidated(data: FormGroup){
-    this.data = data;
-    this.formValidated = true;
-}
 }

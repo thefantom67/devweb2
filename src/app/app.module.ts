@@ -9,7 +9,6 @@ import { AppComponent } from './app.component';
 import { TetiereComponent } from './tetiere/tetiere.component';
 import { FooterComponent } from './footer/footer.component';
 import { SwipeService } from './services/swipe.service';
-import { PanierComponent } from './cart/panier/panier.component';
 import { DetailComponent } from './info/detail/detail.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { PanierState } from '../../shared/stats/panier-state';
@@ -19,7 +18,6 @@ import { PanierState } from '../../shared/stats/panier-state';
     AppComponent,
     TetiereComponent,
     FooterComponent,
-    PanierComponent,
     DetailComponent,
     AccueilComponent
   ],
