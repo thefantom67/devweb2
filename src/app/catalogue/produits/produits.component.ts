@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Store } from '@ngxs/store';
-import { SwipeService } from '../services/swipe.service';
-import { Hotel } from '../models/hotel';
+import { SwipeService } from '../../services/swipe.service';
+import { Hotel } from '../../models/hotel';
 import { AddHotel } from 'shared/actions/article-action';
 
 @Component({

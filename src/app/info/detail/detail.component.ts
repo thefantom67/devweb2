@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Hotel } from '../../models/hotel';
+
 
 @Component({
   selector: 'app-detail',
@@ -6,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./detail.component.css']
 })
 export class DetailComponent implements OnInit {
+
+  Hotels : Observable<Hotel[]>
 
   constructor() { }
 

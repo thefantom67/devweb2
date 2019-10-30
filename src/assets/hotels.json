@@ -1,10 +1,33 @@
 [
-    {"nom":"Hotel Strasbourg","prix":"123€","img":"https://image.noelshack.com/fichiers/2019/43/6/1572123835-1.jpeg"},
-    {"nom":"Villa Paris","prix":"150€","img":"https://image.noelshack.com/fichiers/2019/43/6/1572124332-6.jpeg"},
-    {"nom":"Hotel Bordeaux","prix":"90€","img":"https://image.noelshack.com/fichiers/2019/43/6/1572123834-2.jpeg"},
-    {"nom":"Hotel Bresil","prix":"250€","img":"https://image.noelshack.com/fichiers/2019/43/6/1572123834-3.jpeg"},
-    {"nom":"Logement Budapest","prix":"70€","img":"https://image.noelshack.com/fichiers/2019/43/6/1572123835-5.jpeg"},
-    {"nom":"Chateau Haut-Koenigsbourg","prix":"5000€","img":"https://image.noelshack.com/fichiers/2019/43/6/1572124332-8.jpeg"},
-    {"nom":"Villa Madrid","prix":"1500€","img":"https://image.noelshack.com/fichiers/2019/43/6/1572123835-4.jpeg"},
-    {"nom":"Logement Neuhof","prix":"10€","img":"https://image.noelshack.com/fichiers/2019/43/6/1572124332-7.jpeg"}
+        {"nom":"Hotel Strasbourg","prix":"123€",
+        "img":"https://image.noelshack.com/fichiers/2019/43/6/1572123835-1.jpeg", 
+        "desc":"Super Hotel sur Strasbourg !"},
+    
+        {"nom":"Villa Paris","prix":"150€",
+        "img":"https://image.noelshack.com/fichiers/2019/43/6/1572124332-6.jpeg",
+        "desc":"Villa 9m2 pour etudiant  !"},
+    
+        {"nom":"Hotel Bordeaux","prix":"90€",
+        "img":"https://image.noelshack.com/fichiers/2019/43/6/1572123834-2.jpeg",
+        "desc":"Hotel sans prétention sur Bordeaux !"},
+    
+        {"nom":"Hotel Bresil","prix":"250€",
+        "img":"https://image.noelshack.com/fichiers/2019/43/6/1572123834-3.jpeg",
+        "desc":"Hotel no Brasil com comida Braziliero !"},
+    
+        {"nom":"Logement Budapest","prix":"70€",
+        "img":"https://image.noelshack.com/fichiers/2019/43/6/1572123835-5.jpeg",
+        "desc":"Même prix que dans les maisons closes donc offre à ne pas louper !"},
+    
+        {"nom":"Chateau Haut-Koenigsbourg","prix":"5000€",
+        "img":"https://image.noelshack.com/fichiers/2019/43/6/1572124332-8.jpeg",
+        "desc":"Chateau le plus visité d'Alsace !"},
+    
+        {"nom":"Villa Madrid","prix":"1500€",
+        "img":"https://image.noelshack.com/fichiers/2019/43/6/1572123835-4.jpeg",
+        "desc":"Paela, chorizo, pas le temps de niezer !"},
+    
+        {"nom":"Logement Neuhof","prix":"10€",
+        "img":"https://image.noelshack.com/fichiers/2019/43/6/1572124332-7.jpeg",
+        "desc":"Attention l'ascenseur est en panne poto !"}
 ]
