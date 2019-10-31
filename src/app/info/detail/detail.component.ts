@@ -11,13 +11,15 @@ import { SwipeService } from '../../services/swipe.service';
 })
 export class DetailComponent implements OnInit {
 
-  Hotels: Observable<Hotel[]>; 
+  Hotel: Hotel; 
   
   constructor(private store: Store, private SwipeService : SwipeService,) {
-    this.Hotels = this.store.select(state => state.panier.panier);
+    this.store.select(state => state.panier.selected).subscribe(item => this.Hotel = item);
    }
 
   ngOnInit() {
+
+    this.store.select(state => state.panier.selected).subscribe(item => this.Hotel = item);
   }
 
 }
