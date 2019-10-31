@@ -8,7 +8,6 @@ import { FormulaireComponent } from './formulaire/formulaire.component';
 import { RecapComponent } from './recap/recap.component';
 import { PhoneNumberPipe } from './pipes/phone-number.pipe';
 import { ErrorDirective } from './directives/error.directive';
-import { RegisterComponent } from './register/register.component';
 
 
 @NgModule({
@@ -16,8 +15,7 @@ import { RegisterComponent } from './register/register.component';
     FormulaireComponent,
     RecapComponent,
     PhoneNumberPipe,
-    ErrorDirective,
-    RegisterComponent
+    ErrorDirective
   ],
   imports: [
     CommonModule,
