@@ -1,12 +1,11 @@
 # Devweb2
 
-Travail effectué: 95%
-Temps de réalisation: +10h
+TP05-PHP
 
-Difficultés:
-- Ajouter Articles
-- Afficher Articles panier
-- Supprimer Articles
+Echange entre Angular et Codenvy fonctionnel
+Mise en place du contrôleur php "index.php" --> Disponible sur Codenvy
+Affichage du hotel.json du serveur vers le client
+Mise en place du JWT
 
 ## Development server
 
